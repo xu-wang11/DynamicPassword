@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:id="@+id/GoRegisterButton"
+        android:layout_marginTop="51dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:id="@+id/ButtonLogin"
+        android:layout_below="@+id/GoRegisterButton"
+        android:layout_alignLeft="@+id/GoRegisterButton"
+        android:layout_alignStart="@+id/GoRegisterButton"
+        android:layout_marginTop="42dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取挑战码"
+        android:id="@+id/AskCodeButton"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/ButtonLogin"
+        android:layout_alignStart="@+id/ButtonLogin" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="验证"
+        android:id="@+id/ValidateButton"
+        android:layout_below="@+id/AskCodeButton"
+        android:layout_alignRight="@+id/AskCodeButton"
+        android:layout_alignEnd="@+id/AskCodeButton"
+        android:layout_marginTop="69dp" />
+</RelativeLayout>
